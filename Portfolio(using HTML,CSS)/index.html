@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            color: #333;
+            font-family: "Josefin Sans";
+            line-height: 1.5;
+        }
+
+        body {
+            padding: 2rem 2.5rem;
+            background: linear-gradient(#dfe0db, #dfe0db 50%, #fcebe1 50%, #fcebe1);
+        }
+
+        h1 {
+            font-size: 2rem;
+            text-transform: uppercase;
+        }
+
+        h2 {
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            border-top: 1px solid #888;
+            border-bottom: 1px solid #888;
+            padding: 0.75rem 0;
+            margin-bottom: 2rem;
+        }
+
+        h3 {
+            font-size: 1rem;
+            text-transform: uppercase;
+            color: salmon;
+        }
+
+        p {
+            line-height: 1.5;
+            text-align: justify;
+        }
+
+        section+section {
+            margin-top: 2rem;
+        }
+
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        .profile {
+            text-align: center;
+        }
+
+        .profile img {
+            border-radius: 999px;
+            width: 15rem;
+            height: 15rem;
+        }
+
+        .profile p {
+            color: #888;
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+
+        .contact ul {
+            margin-top: -2rem;
+        }
+
+        .contact li {
+            text-align: right;
+            text-transform: uppercase;
+            padding: 1rem;
+            color: #888;
+            border-top: 1px solid #888;
+            border-bottom: 1px solid #888;
+            font-size: 0.8rem;
+        }
+
+        .skills>ul {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 1rem;
+        }
+
+        .event {
+            display: grid;
+            grid-template-columns: 5ch 1fr;
+            margin-bottom: 1rem;
+        }
+
+        .content {
+            border-left: 1px solid #888;
+            padding-left: 1rem;
+            margin-left: 1rem;
+        }
+
+        .content>h3+p {
+            margin-bottom: 1rem;
+            color: #333;
+        }
+
+        .resume {
+            display: grid;
+            grid-template-columns: 40% 1fr;
+            grid-gap: 4rem;
+            background-color: white;
+            padding: 2rem;
+            max-width: 900px;
+        }
+
+        .profile>p {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="resume">
+        <div class="column">
+            <section class="profile">
+                <h1> Shubham Dhole</h1>
+                <p><em>Trainee</em></p>
+                <img src="IMG-20210602-WA0010-removebg-preview (1).jpg" alt="">
+            </section>
+
+            <section class="contact">
+                <h2>Contact</h2>
+                <ul>
+                    <li>Kamal Singh Ka Bagh</li>
+                    <li><a href="mailto: shubhamdhole518@gmail.com">shubhamdhole518@gmail.com</a></li>
+                    <li><a href="https://gamings.com">https://gaming.com</a></li>
+                    <li><a href="tel: +916232799805">(+91)6232799805</a></li>
+                </ul>
+            </section>
+
+            <section class="objectives">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin faucibus justo at felis tempor, eget
+                    aliquet nunc dignissim. Sed eu condimentum quam. Aliquam quis semper nisl. Integer tincidunt
+                    convallis efficitur. Aliquam elementum ut lectus feugiat posuere. Pellentesque eget mauris ipsum.
+                    Vivamus iaculis nulla tortor.
+                </p>
+            </section>
+
+            <section class="socials">
+
+                <ul>
+                    <li>Instagram</li>
+                    <li>Linkedin</li>
+                    <li>Twitter</li>
+                </ul>
+            </section>
+
+            <section class="skills">
+                <h2>Capabilities/Skills</h2>
+                <ul>
+                    <li>
+                        <h3>Professionals</h3>
+                        <ul>
+                            <li>Vestibulum</li>
+                            <li>consectetur</li>
+                            <li>ipsum</li>
+                            <li>Integer</li>
+                            <li>pretium</li>
+                            <li>tincidunt</li>
+                            <li>interdum</li>
+                            <li>volutpat</li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <h3>Personal</h3>
+                        <ul>
+                            <li>Lorem.</li>
+                            <li>Debitis.</li>
+                            <li>Dolor.</li>
+                            <li>Hic?</li>
+                            <li>Eveniet!</li>
+                            <li>Voluptatum.</li>
+                            <li>Ab.</li>
+                            <li>Necessitatibus?</li>
+
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+        </div>
+
+        <div class="column">
+            <section class="education">
+                <h2>Education</h2>
+                <ul class="timeline">
+                    <li class="event">
+                        <span class="duration">2017-2021</span>
+                        <div class="content">
+                            <h3>B.Tech (Computer Science Engineering)</h3>
+                            <p><em>ITM Gwalior</em></p>
+                            <p>am eget massa libero. Aenean elementum justo ut malesuada tristique. Cras placerat sapien
+                                a nulla blandit, vel ornare purus venenatis.
+                            </p>
+                            <p>CGPA: 8.5</p>
+                        </div>
+                    </li>
+
+                    <li class="event">
+                        <span class="duration">2016-2017</span>
+                        <div class="content">
+                            <h3>Higher Secondary Education</h3>
+                            <p><em>Central Academy</em></p>
+                            <p>am eget massa libero. Aenean elementum justo ut malesuada tristique. Cras placerat sapien
+                                a nulla blandit, vel ornare purus venenatis.
+                            </p>
+                            <p>CGPA: 8.5</p>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="experience">
+                <h2>Experience</h2>
+                <ul class="timeline">
+                    <li class="event">
+                        <span class="duration">2017-2020</span>
+                        <div class="content">
+                            <h3>Software Engineer</h3>
+                            <p>Ingenuity,Noida</p>
+                            <p>
+                                Nam eget massa libero. Aenean elementum justo ut malesuada tristique. Cras placerat
+                                sapien a nulla blandit, vel ornare purus venenatis. Vestibulum urna dolor, eleifend
+                                vitae maximus in, varius ac velit. Nam nec mattis enim. Donec varius sodales accumsan.
+                                Nam eget massa libero. Aenean elementum justo ut malesuada tristique.
+                            </p>
+                        </div>
+                    </li>
+
+                    <li class="event">
+                        <span class="duration">2017-2020</span>
+                        <div class="content">
+                            <h3>Software Engineer</h3>
+                            <p>Ingenuity,Noida</p>
+                            <p>
+                                Nam eget massa libero. Aenean elementum justo ut malesuada tristique. Cras placerat
+                                sapien a nulla blandit, vel ornare purus venenatis. Vestibulum urna dolor, eleifend
+                                vitae maximus in, varius ac velit. Nam nec mattis enim. Donec varius sodales accumsan.
+                                Nam eget massa libero. Aenean elementum justo ut malesuada tristique.
+                            </p>
+                        </div>
+                    </li>
+
+                    <li class="event">
+                        <span class="duration">2017-2020</span>
+                        <div class="content">
+                            <h3>Software Engineer</h3>
+                            <p>Ingenuity,Noida</p>
+                            <p>
+                                Nam eget massa libero. Aenean elementum justo ut malesuada tristique. Cras placerat
+                                sapien a nulla blandit, vel ornare purus venenatis. Vestibulum urna dolor, eleifend
+                                vitae maximus in, varius ac velit. Nam nec mattis enim. Donec varius sodales accumsan.
+                                Nam eget massa libero.
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+
+            </section>
+
+        </div>
+    </div>
+
+
+</body>
+
+</html>

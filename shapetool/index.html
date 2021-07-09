@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas shapes</title>
+    <style>
+        body {
+            background-image: url(paint.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        #myCanvas {
+            background-color: darkgrey;
+            border: 5px solid black;
+            margin-left: 350px;
+            margin-top: 100px;
+        }
+
+        .btn-group {
+            margin-top: 100px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div>
+
+        <canvas id="myCanvas" width="800" height="600"></canvas>
+
+        <button style="position: absolute; top:120px; left:380px; " class="btn btn-primary"
+            onclick="Rectangle()">Rectangle</button>
+        <button style="position: absolute; top:120px; left:550px; ;" class="btn btn-primary"
+            onclick="Circle()">Circle</button>
+        <button style="position: absolute; top:120px; left:730px;" class="btn btn-primary"
+            onclick="Triangle()">Triangle</button>
+        <button style="position: absolute; top:120px; left:900px;" class="btn btn-primary"
+            onclick="Square()">Square</button>
+        <button style="position: absolute; top:120px; left:1040px;" class="btn btn-primary" onclick="Text()">Canvas
+            Text</button>
+    </div>
+    </div>
+    <script src="canvas.js"></script>
+</body>
+
+</html>
