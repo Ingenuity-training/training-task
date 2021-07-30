@@ -1,0 +1,21 @@
+{
+  "name": "audio_player",
+  "version": "0.0.1",
+  "description": "Audio player in typescript",
+  "main": "./js/player.js",
+  "scripts": {
+    "start": "grunt",
+    "build": "grunt script",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Shubham",
+  "license": "ISC",
+  "devDependencies": {
+    "grunt": "^1.4.1",
+    "grunt-contrib-connect": "^3.0.0",
+    "grunt-contrib-watch": "^1.1.0",
+    "grunt-serve": "^0.1.6",
+    "grunt-ts": "^6.0.0-beta.22",
+    "typescript": "^4.3.5"
+  }
+}

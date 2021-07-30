@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Player</title>
+    <style>
+        body {
+            
+            background-image: url(images/boombox1.jpg);
+            background-repeat: no-repeat;
+            background-size: 1535px 750px;
+            background-attachment: fixed;
+        }
+
+        .audio-player-cont {
+            width:500px;
+            height: 150px;
+            background: #f3ebdc;
+            box-shadow: 0 0 6px 2px #c7a8a8;
+            color: #003ba9;
+            font-family: Verdana;
+            font-size: 12px;
+            margin-left: 510px;
+            margin-top: 390px;
+        }
+
+        .logo {
+            float: left;
+        }
+
+        .player {
+            float: right;
+            margin: 7px;
+        }
+
+        .song-title {
+            width: 300px;
+            padding: 5px 0px 5px 0px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+           
+            
+
+        .song-slider {
+            width: 375px;
+            margin-left: 10px;
+        }
+
+        .current-time {
+            float: left;
+            font-size: 10px;
+            margin-left: 10px;
+        }
+
+        .duration {
+            /* float: right; */
+            font-size: 10px;
+            margin-left: 270px;
+        }
+
+        .controllers {
+            clear: inherit;
+            display: table;
+        }
+
+        .controllers * {
+            vertical-align: middle;
+            margin-left: 10px; 
+            /* padding-left: 10px;  */
+        }
+        
+        .volume-slider {
+            width: 60px;
+            margin-left: 5px;
+        }
+        .songTime{
+            display: table;
+        }
+    </style>
+</head>
+
+<body>
+    <div class='audio-player-cont'>
+        <div class="logo">
+            <img src="images/boombox.png" style="width: 95px; height: 148px; margin-left: 5px;">
+        </div>
+
+        <div class="player">
+            <div id='songTitle' class='song-title' >My song title will goes here My song title will goes here </div>
+        </div>
+        <input id="songSlider" class="song-slider" type="range" min="0" step="1" onchange="seekSong()">
+        <div class="songTime">
+            <div id="currentTime" class="current-time">00.00</div>
+            <div id="duration" class="duration" style="margin-right: 20px;">00.00</div>
+        </div>
+        <div class="controllers">
+            <img src="images/back.png" width="25px" onclick="previous()">
+            <img src="images/backwards.png" width="25px" onclick="decreasePlaybackRate()">
+            <img src="images/video-pause-button.png" width="40px" onclick="playOrPauseSong(this)">
+            <img src="images/forward.png" width="25px" onclick="increasePlaybackRate()">
+            <img src="images/next.png" width="25px" onclick="next()">
+            <img src="images/repeat.png" width="25px" onclick="repeat()">
+            <img src="images/shuffle.png" width="25px" onclick="shuffle()">
+            <!-- <button  type="button" id="myBtn">Enable loop</button> -->
+            <img src="images/volume-down.png" width="20px" style="margin-left: 20px;" onclick="decreaseVolume()">
+            <input id="volumeSlider" class="volume-slider" type="range" min="0" max="1" step="0.01"
+                onchange="adjustVolume()">
+            <img src="images/volume-up.png" width="20px" style="margin-left: 2px;" onclick="increaseVolume()">
+        </div>
+        <div id="nextSong" class="song-title" style="margin-left: 10px;"></div>
+    </div>
+<script src="./js/player.js"></script>
+</body>
+
+</html> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
